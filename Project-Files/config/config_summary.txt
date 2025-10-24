@@ -1,0 +1,14 @@
+Student Configuration Summary
+Student Name: Surya Prasad Senthilkumaran
+Student ID: 5
+================================
+
+Task 1     V1_SIZE=37, V1_TARGET=55
+Task 2     V2_SIZE=53
+Task 3     V3_SIZE=45
+Task 4     V4_SIZE=49
+Task 5     V5_SIZE=53
+Task 6     V6_SIZE=37
+Task 7     V7_SIZE=45
+Task 8     V8_SIZE=485
+Task 9     V9_SIZE=485
