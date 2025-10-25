@@ -16,6 +16,8 @@ int main(int argc, char **argv)
     int offset = eip_addr - buf_addr;
     printf("Offset7: %d\n", offset);
 
+    // Choosing to use my own name instead of V7_NAME, commenting out for if asked to substitute
+    // char name[] = V7_NAME;
     char name[] = "Surya\n";
 
     int buf_size = offset + 12 + strlen(name) + 1; // offset(*) + printf + exit + name + \\0
